@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <div text-center>
+        Health Helper App <ion-icon name="heart"> </ion-icon>
+    </div>
+    </ion-title>
+  </ion-navbar>
+  <ion-list-header color="primary">Blood Pressure Inputs</ion-list-header>
+</ion-header>
+
+<!--Input screen for blood pressure-->
+<ion-content padding>
+  <ion-item>
+    <ion-label color="dark">Enter Systolic - week 1</ion-label>
+    <ion-input type="number" [(ngModel)]="systolicInput1"> </ion-input>
+
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Enter Diastolic - week 1</ion-label>
+    <ion-input type="number" [(ngModel)]="diastolicInput1"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark">Enter Systolic - week 2</ion-label>
+    <ion-input type="number" [(ngModel)]="systolicInput2"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Enter Diastolic - week 2</ion-label>
+    <ion-input type="number" [(ngModel)]="diastolicInput2"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark">Enter Systolic - week 3</ion-label>
+    <ion-input type="number" [(ngModel)]="systolicInput3"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Enter Diastolic - week 3</ion-label>
+    <ion-input type="number" [(ngModel)]="diastolicInput3"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark">Enter Systolic - week 4</ion-label>
+    <ion-input type="number" [(ngModel)]="systolicInput4"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Enter Diastolic - week 4</ion-label>
+    <ion-input type="number" [(ngModel)]="diastolicInput4"> </ion-input>
+  </ion-item>
+
+  <!--On click send to .ts-->
+  <div text-center>
+  <button ion-button (click)="btnClicked()">Average for the month</button>
+  </div>
+
+
+
+
+</ion-content>

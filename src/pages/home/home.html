@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <div text-center>
+        Health Helper App <ion-icon name="heart"> </ion-icon>
+      </div>
+    </ion-title>
+  </ion-navbar>
+  <ion-list-header color="primary">Blood Sugar and weight Inputs</ion-list-header>
+</ion-header>
+
+<!--Input screen for blood sugar and weight-->
+<ion-content padding>
+  <ion-item>
+    <ion-label color="primary">Enter blood sugar - week 1</ion-label>
+    <ion-input type="number" [(ngModel)]="bloodSugarInput1"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="secondary">Enter weight - week 1</ion-label>
+    <ion-input type="number" [(ngModel)]="weightInput1"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Enter blood sugar - week 2</ion-label>
+    <ion-input type="number" [(ngModel)]="bloodSugarInput2"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="secondary">Enter weight - week 2</ion-label>
+    <ion-input type="number" [(ngModel)]="weightInput2"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Enter blood sugar - week 3</ion-label>
+    <ion-input type="number" [(ngModel)]="bloodSugarInput3"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="secondary">Enter weight - week 3</ion-label>
+    <ion-input type="number" [(ngModel)]="weightInput3"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Enter blood sugar - week 4</ion-label>
+    <ion-input type="number" [(ngModel)]="bloodSugarInput4"> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="secondary">Enter weight - week 4</ion-label>
+    <ion-input type="number" [(ngModel)]="weightInput4"> </ion-input>
+  </ion-item>
+
+  <!--On click send to .ts-->
+  <div text-center>
+  <button ion-button (click)="btnClicked()">Average for the month</button>
+  </div>
+
+</ion-content>
